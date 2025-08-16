@@ -1,0 +1,48 @@
+namespace Rational;
+
+public struct Natural:IInteger{
+	Natural(long number)=>Number=number;
+
+	public long Number{
+		get;
+		set=>field=value>1?value:1;
+	}
+
+	public static implicit operator Natural(long number)=>new(number);
+}
+
+public struct Integer(long number=default):IInteger{
+	public long Number{get;set;}=number;
+}
+
+public struct Fraction(Integer numerator,Natural denominator):IRational{
+	public long Numerator{
+		get=>numerator.Number;
+		set=>numerator.Number=value;
+	}
+
+	public long Denominator{
+		get=>denominator.Number;
+		set=>denominator.Number=value;
+	}
+
+	public Fraction ToFraction=>this;
+
+	public IRational ToRational=>(long)(Numerator%Denominator) switch{
+		0=>new Integer(Numerator/Denominator),
+		_=>this
+	};
+}
+
+public interface IRational{
+	Fraction ToFraction{get;}
+	IRational ToRational{get;}
+	long Numerator=>ToFraction.Numerator;
+	long Denominator=>ToFraction.Denominator;
+}
+
+public interface IInteger:IRational{
+	long Number{get;}
+	IRational IRational.ToRational=>new Integer(Number);
+	Fraction IRational.ToFraction=>new(new(Number),1);
+}

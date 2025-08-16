@@ -1,0 +1,14 @@
+H:\Project\C#\Project\Free\obj\Debug\net10.0\Free.GeneratedMSBuildEditorConfig.editorconfig
+H:\Project\C#\Project\Free\obj\Debug\net10.0\Free.AssemblyInfoInputs.cache
+H:\Project\C#\Project\Free\obj\Debug\net10.0\Free.AssemblyInfo.cs
+H:\Project\C#\Project\Free\obj\Debug\net10.0\Free.csproj.CoreCompileInputs.cache
+H:\Project\C#\Project\Free\bin\Debug\net10.0\Free.exe
+H:\Project\C#\Project\Free\bin\Debug\net10.0\Free.deps.json
+H:\Project\C#\Project\Free\bin\Debug\net10.0\Free.runtimeconfig.json
+H:\Project\C#\Project\Free\bin\Debug\net10.0\Free.dll
+H:\Project\C#\Project\Free\bin\Debug\net10.0\Free.pdb
+H:\Project\C#\Project\Free\obj\Debug\net10.0\Free.dll
+H:\Project\C#\Project\Free\obj\Debug\net10.0\refint\Free.dll
+H:\Project\C#\Project\Free\obj\Debug\net10.0\Free.pdb
+H:\Project\C#\Project\Free\obj\Debug\net10.0\Free.genruntimeconfig.cache
+H:\Project\C#\Project\Free\obj\Debug\net10.0\ref\Free.dll
