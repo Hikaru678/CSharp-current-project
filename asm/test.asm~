@@ -1,0 +1,18 @@
+bits 64
+
+extern write
+
+section .text
+global start
+
+start:
+	sub rsp,8
+	sub rsp,16
+	mov r10,rcx
+	sub rsp,48
+	mov rcx,1
+	mov rdx,r10
+	mov r8,100
+	call write
+	add rsp,72
+	ret
